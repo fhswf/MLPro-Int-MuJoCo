@@ -1,0 +1,8 @@
+mlpro[full]
+
+sphinxcontrib-napoleon
+sphinx-copybutton
+sphinx_multitoc_numbering
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-jquery
