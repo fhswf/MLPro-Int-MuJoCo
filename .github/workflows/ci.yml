@@ -8,8 +8,8 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-#  schedule:
-#    - cron: '00 1 * * 1'
+  schedule:
+    - cron: '00 1 * * 1'
   workflow_dispatch:
 
   
@@ -25,11 +25,6 @@ jobs:
         with:
           token: ${{ secrets.CI_UNIT_TEST }}
           ref: ${{ github.head_ref }}
-
-      - name: Generate dependecies list
-        run: |
-          awk '/^[[]/{f=0} /full/{f=1;next} {sub(/^[ \t]+|[ \t]/, "")} f' setup.cfg | tr -d "<" | tr -d ">" | tr -s "==" "," > doc/rtd/content/01_welcome/sub/deps.txt
-          awk '/^[[]/{f=0} /full/{f=1;next} {sub(/^[ \t]+|[ \t]/, "")} f' setup.cfg > requirements.txt
 
       - name: Commit files
         id: auto-commit-action
@@ -69,6 +64,7 @@ jobs:
         pip install pip --upgrade
         pip install flake8 pytest
         pip install -r requirements.txt
+        pip install -e .
         
     - name: Lint with flake8
       run: |
@@ -87,7 +83,7 @@ jobs:
     if: needs.deps_gen.outputs.trigger_build == 'true'
     strategy:
       matrix:
-        python-version: ['3.10']
+        python-version: ['3.11']
 
     steps:
     - name: Checkout Codes
@@ -104,6 +100,7 @@ jobs:
       run: |
         pip install flake8 pytest
         pip install -r requirements.txt
+        pip install -e .
         pip install sphinx
         pip install sphinx-rtd-theme
         pip install sphinx-copybutton
@@ -136,6 +133,7 @@ jobs:
       run: |
         pip install flake8 pytest
         pip install -r requirements.txt
+        pip install -e .
 
     - name: Test with pytest
       run: |
@@ -164,6 +162,7 @@ jobs:
       run: |
         pip install flake8 pytest
         pip install -r requirements.txt
+        pip install -e .
 
     - name: Test with pytest
       run: |
