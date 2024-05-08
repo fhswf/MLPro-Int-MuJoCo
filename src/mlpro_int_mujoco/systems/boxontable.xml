@@ -1,6 +1,6 @@
 <mujoco>
     <option timestep="0.01" gravity="0 0 -9.81" tolerance="1e-10" impratio="10">
-		<flag sensornoise="enable" energy="enable"/>
+		<flag sensornoise="disable" energy="enable"/>
 	</option>
     <default>
         <geom contype='1' conaffinity='1' condim='6'  margin="1e-3" solref=".01 1" solimp=".99 .99 .01" />

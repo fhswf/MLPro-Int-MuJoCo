@@ -1,6 +1,6 @@
 <mujoco>
 	<option timestep="0.05" gravity="0 0 -9.81" integrator="RK4">
-		<flag sensornoise="enable" energy="enable"/>
+		<flag sensornoise="disable" energy="enable"/>
 	</option>
 	<include file="mlpro.xml"></include>
 	<worldbody>
