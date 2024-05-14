@@ -1,5 +1,5 @@
-.. _Howto BF SYSTEMS 012:
-Howto BF-SYSTEMS-012: Cartpole Continuous Systems wrapped with MuJoCo
+.. _Howto BF SYSTEMS 002:
+Howto BF-SYSTEMS-002: Cartpole Continuous Systems wrapped with MuJoCo
 ====================================================================
 
 **Prerequisites**
