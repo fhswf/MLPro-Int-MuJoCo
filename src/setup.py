@@ -2,7 +2,7 @@ from setuptools import setup
 
 
 setup(name='mlpro-int-mujoco',
-version='0.1.0',
+version='0.1.1',
 description='MLPro: Integration MuJoCo',
 author='MLPro Team',
 author_mail='mlpro@listen.fh-swf.de',
