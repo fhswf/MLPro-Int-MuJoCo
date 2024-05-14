@@ -9,7 +9,7 @@
 ## -- 2023-04-12  1.0.0     MRD      First Release
 ## -- 2023-04-12  1.0.1     MRD      Refactor reset
 ## -- 2023-04-19  1.0.2     LSB      Renamed the module
-## -- 2024-05-08  1.0.3     SY        Migration from MLPro to MLPro-Int-MuJoCo
+## -- 2024-05-08  1.0.3     SY       Migration from MLPro to MLPro-Int-MuJoCo
 ## -------------------------------------------------------------------------------------------------
 
 """
