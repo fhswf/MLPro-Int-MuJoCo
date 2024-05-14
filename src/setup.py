@@ -12,7 +12,7 @@ packages=['mlpro_int_mujoco'],
 # Package dependencies for full installation
 extras_require={
     "full": [
-        "mlpro[full]>=1.4.0",
+        "mlpro[full]>=1.4.4",
         "mujoco>=3.1.2",
         "lxml>=4.9.2"
     ],
