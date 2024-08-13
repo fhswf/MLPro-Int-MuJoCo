@@ -8,17 +8,18 @@
 ## -- 2023-02-23  0.0.0     MRD       Creation
 ## -- 2023-02-23  1.0.0     MRD       Released first version
 ## -- 2024-05-08  1.1.0     SY        Migration from MLPro to MLPro-Int-MuJoCo
+## -- 2024-08-13  1.1.1     SY        Refactoring
 ## -------------------------------------------------------------------------------------------------
 
 """
-Ver. 1.1.0 (2024-05-08)
+Ver. 1.1.1 (2024-08-13)
 
 This module provides a CartPole environment with MuJoCo Simulation. 
 """
 
 
 import os
-import mlpro
+import mlpro_int_mujoco
 from mlpro.rl.models_env import Environment
 from mlpro.rl.models_agents import Reward, State
 from mlpro.bf.ops import Mode
@@ -43,7 +44,7 @@ class CartpoleMujoco(Environment):
         p_visualize: bool = False,
         p_logging=Log.C_LOG_ALL,
     ):
-        model_file = os.path.join(os.path.dirname(mlpro.__file__), "bf/systems/pool/mujoco", "cartpole.xml")
+        model_file = os.path.join(os.path.dirname(mlpro_int_mujoco.__file__), "systems", "cartpole.xml")
         super().__init__(
             p_mode=Mode.C_MODE_SIM,
             p_mujoco_file=model_file,
