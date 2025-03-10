@@ -17,6 +17,6 @@ Welcome to MLPro-Int-MuJoCo, an extension to MLPro to integrate the MuJoCo packa
 MLPro-Int-MuJoCo offers wrapper classes that allow the reuse of functionalities from MuJoCo in MLPro.
 
 ### Learn more
-[MLPro - Machine Learning Professional](https://mlpro.readthedocs.io)   
+[MLPro - The integrative middleware framework for standardized machine learning in Python](https://mlpro.readthedocs.io)   
 [MLPro-Int-MuJoCo - Integration of MuJoCo into MLPro](https://mlpro-int-mujoco.readthedocs.io)   
 [MuJoCo - Advanced Physics Simulation](https://mujoco.org/)   
