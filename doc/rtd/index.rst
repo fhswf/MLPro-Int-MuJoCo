@@ -24,11 +24,12 @@ Before running the examples, please install the latest versions of MLPro and MuJ
 
 
 **See also**
-   - `MLPro - Machine Learning Professional <https://mlpro.readthedocs.io>`_ 
+   - `MLPro - The integrative middleware framework for standardized machine learning in Python <https://mlpro.readthedocs.io>`_ 
    - `MLPro-BF - State-based Systems <https://mlpro.readthedocs.io/en/latest/content/02_basic_functions/mlpro_bf/sub/layer3_application_support/03_systems.html>`_
    - `MuJoCo - Advanced physics simulation <https://mujoco.org/>`_ 
-   - `Further MLPro extensions <https://mlpro.readthedocs.io/en/latest/content/04_extensions/main.html>`_
    - `MLPro-Int-MuJoCo on GitHub <https://github.com/fhswf/MLPro-Int-MuJoCo>`_
+   - `MLPro-Int-MuJoCo on PyPI <https://pypi.org/project/mlpro-int-mujoco>`_
+   - `Further MLPro extensions <https://mlpro.readthedocs.io/en/latest/content/04_extensions/main.html>`_
 
 
 .. toctree::
