@@ -1,1 +1,1 @@
-from mlpro_int_mujoco.wrappers.basics import *
+from .basics import *
