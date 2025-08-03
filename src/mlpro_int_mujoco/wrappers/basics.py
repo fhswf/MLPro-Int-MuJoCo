@@ -32,11 +32,11 @@
 ## -- 2023-04-14  1.2.7     MRD       Add depth data to the state, simplify _get_camera_data
 ## -- 2024-04-10  1.2.8     DA        Refactoring
 ## -- 2024-05-08  1.3.0     SY        Migration from MLPro to MLPro-Int-MuJoCo
+## -- 2025-08-03  1.3.1     SY       Refactoring
 ## -------------------------------------------------------------------------------------------------
 
-
 """
-Ver. 1.3.0  (2024-05-08)
+Ver. 1.3.1 (2025-08-03)
 
 This module wraps bf.Systems with MuJoCo Simulation functionality.
 
@@ -50,8 +50,22 @@ import numpy as np
 from threading import Lock
 from lxml import etree
 
-from mlpro.rl.models import *
+from mlpro.rl import *
+from mlpro.bf import *
+from mlpro.bf.math import *
+from mlpro.bf.systems import *
+from mlpro.bf.plot import *
+from mlpro.bf.ml import *
 from mlpro.wrappers import Wrapper
+
+# Export list for public API
+__all__ = [
+    'CallbacksViewer',
+    'BaseViewer',
+    'OffRenderViewer',
+    'RenderViewer',
+    'MujocoHandler'
+    ]
 
 
 
@@ -960,3 +974,4 @@ class MujocoHandler(Wrapper):
         if self._viewer is not None:
             self._viewer.close()
             self._viewer = None
+
