@@ -9,10 +9,11 @@
 ## -- 2023-02-23  1.0.0     MRD       Released first version
 ## -- 2024-05-08  1.1.0     SY        Migration from MLPro to MLPro-Int-MuJoCo
 ## -- 2024-08-13  1.1.1     SY        Refactoring
+## -- 2025-08-03  1.1.2     SY        Refactoring
 ## -------------------------------------------------------------------------------------------------
 
 """
-Ver. 1.1.1 (2024-08-13)
+Ver. 1.1.2 (2025-08-03)
 
 This module provides a CartPole environment with MuJoCo Simulation. 
 """
@@ -20,11 +21,16 @@ This module provides a CartPole environment with MuJoCo Simulation.
 
 import os
 import mlpro_int_mujoco
-from mlpro.rl.models_env import Environment
-from mlpro.rl.models_agents import Reward, State
-from mlpro.bf.ops import Mode
-from mlpro.bf.various import Log
-from mlpro.bf.math import Dimension
+from mlpro.rl import *
+from mlpro.bf import *
+from mlpro.bf.math import *
+from mlpro.bf.plot import *
+from mlpro.bf.systems import *
+
+# Export list for public API
+__all__ = [
+    'CartpoleMujoco'
+    ]
 
 
 
@@ -133,5 +139,6 @@ class CartpoleMujocoDiscrete(CartpoleMujoco):
 ## -------------------------------------------------------------------------------------------------
 ## -------------------------------------------------------------------------------------------------
 class CartpoleMujocoContinuous(CartpoleMujoco):
+
 
     C_NAME = "CartpoleMujocoContinuous"
