@@ -59,7 +59,7 @@ Unit test for all examples available.
 
 import sys
 import os
-from mlpro.bf.various import Log
+from mlpro.bf import *
 import runpy
 import pytest
 

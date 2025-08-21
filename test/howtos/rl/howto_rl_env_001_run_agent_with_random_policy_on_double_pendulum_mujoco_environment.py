@@ -40,16 +40,12 @@ import numpy as np
 import os
 
 import mlpro_int_mujoco
-from mlpro.bf.ml import Model
-from mlpro.bf.ops import Mode
-from mlpro.bf.various import Log
-from mlpro.rl.models_agents import Policy, Agent
-from mlpro.rl.models_train import RLScenario
-from mlpro.bf.systems import State, Action
-from mlpro.rl.models_env_ada import SARSElement
-from mlpro.rl.models_env import Environment
-from mlpro.rl.models_agents import Reward
+from mlpro.rl import *
+from mlpro.bf import *
+from mlpro.bf.ml import *
 from mlpro.bf.systems import *
+from mlpro.bf.math import *
+from mlpro.bf.plot import *
 
 
 # 1 Implement the Environment
